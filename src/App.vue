@@ -1,9 +1,11 @@
 <script>
 import MatrixBackground from './components/MatrixBackground.vue'
+import Header from './components/Header.vue';
 
 export default {
   components: {
-    MatrixBackground
+    MatrixBackground,
+    Header
   },
   data() {
     return {
@@ -19,8 +21,7 @@ export default {
 
 <template>
   <MatrixBackground lineCount="6" speed="3" cellSize="40" lineColor="#ffffff" lineThickness="1" />
-  <p>another text</p>
-
+  <Header></Header>
 </template>
 
 <style>
