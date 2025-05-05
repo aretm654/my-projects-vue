@@ -1,6 +1,10 @@
 <script>
+import MatrixBackground from './components/MatrixBackground.vue'
 
 export default {
+  components: {
+    MatrixBackground
+  },
   data() {
     return {
       loading: true,
@@ -14,10 +18,9 @@ export default {
 </script>
 
 <template>
-  <div v-if="projects.length === 0"></div>
-  <div v-else>
-    
-  </div>
+  <MatrixBackground lineCount="6" speed="3" cellSize="40" lineColor="#ffffff" lineThickness="1" />
+  <p>another text</p>
+
 </template>
 
 <style>
@@ -63,5 +66,9 @@ export default {
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+
+  p {
+    color: white
   }
 </style>
