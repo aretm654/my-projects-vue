@@ -173,7 +173,7 @@ export default {
 
 <style scoped>
 .grid-background {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

@@ -1,11 +1,13 @@
 <script>
 import MatrixBackground from './components/MatrixBackground.vue'
 import Header from './components/Header.vue';
+import Project from './components/Project.vue';
 
 export default {
   components: {
     MatrixBackground,
-    Header
+    Header,
+    Project
   },
   data() {
     return {
@@ -21,7 +23,11 @@ export default {
 
 <template>
   <MatrixBackground lineCount="6" speed="3" cellSize="40" lineColor="#ffffff" lineThickness="1" />
-  <Header></Header>
+  <div class="content">
+    <Header></Header>
+  <Project style="margin-top: 70px;" link="www.google.com" photo="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blade001_Hero_960x675_Transparent_2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&qlt=100&fmt=png-alpha&fit=constrain" text="крутой ттекст" />
+  <Project style="margin-top: 20px;" link="www.google.com" photo="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blade001_Hero_960x675_Transparent_2x?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1920&qlt=100&fmt=png-alpha&fit=constrain" text="крутой ттекст" />
+  </div>
 </template>
 
 <style>
